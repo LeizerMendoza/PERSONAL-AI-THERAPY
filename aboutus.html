@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETCARE</title>
+</head>
+<style>
+    * {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    .banner {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(therapy.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 120px;
+        cursor: pointer;
+        size: 1px;
+        border-radius: 50%;
+        color: #fff;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .navbar ul li::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: gold;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+
+    .navbar ul li:hover::after {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #f8f7f7;
+    }
+
+    .content h1 {
+        font-size: 70px;
+        margin-top: 80px;
+
+    }
+
+    .content p {
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+
+    button {
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #009688;
+        background: transparent;
+        color: #fcf9f9;
+        cursor: pointer;
+        position: relative;
+    }
+
+    span {
+        background: #009688;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: 0.5s;
+    }
+
+    button:hover span {
+        width: 100%;
+    }
+
+    button:hover {
+        border: none;
+    }
+
+    footer {
+        background-color: #009688;
+        color: #fff;
+        text-align: center;
+        padding: 0.5px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+</style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <h4 class="logo">AI-THERA</h4>
+            <ul>
+                <li><a href="index.html">🏠HOME</a></li>
+                <li><a href="aboutus.html"><strong style="color:aqua">🤖ABOUT US</strong></a></li>
+                <li><a href="textai.html">💬TALK TO AI-THERA</a></li>
+                <li><a href="more.html">MORE</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>hello there!</h1>
+            <p>In the realm of mental health and well-being, a revolutionary approach has emerged in the form of <br>
+                personal therapy with AI communication. This innovative method harnesses the power of artificial <br>
+                intelligence to provide individuals with a unique and personalized therapeutic experience. Unlike <br>
+                traditional therapy, which relies solely on human interaction, AI-driven personal therapy <br>
+                integrates cutting-edge technology to offer a confidential and accessible space for self-reflection<br>
+                and emotional support.<br></p>
+
+            <p>Through sophisticated algorithms, the AI system engages in empathetic and non-judgmental
+                conversations,<br>
+                creating an environment where individuals can freely express their thoughts and feelings. This form
+                of<br>
+                therapy adapts to the user's preferences and learning patterns, tailoring its responses to provide <br>
+                constructive insights, coping strategies, and emotional assistance. The integration of AI in personal
+                <br>
+                therapy not only facilitates convenience and affordability but also addresses the growing demand for<br>
+                mental health resources on a global scale.<br></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
